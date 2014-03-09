@@ -1,0 +1,1588 @@
+[
+  {
+    "op": "core/column-rename",
+    "description": "Rename column File to fFile",
+    "oldColumnName": "File",
+    "newColumnName": "fFile"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column fFile to file",
+    "oldColumnName": "fFile",
+    "newColumnName": "file"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Manufacturer to manufacturer",
+    "oldColumnName": "Manufacturer",
+    "newColumnName": "manufacturer"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column manufacturer using expression value.toTitlecase()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "manufacturer",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column manufacturer using expression grel:'BMW'",
+    "engineConfig": {
+      "facets": [
+        {
+          "invert": false,
+          "expression": "value",
+          "selectError": false,
+          "omitError": false,
+          "selectBlank": false,
+          "name": "manufacturer",
+          "omitBlank": false,
+          "columnName": "manufacturer",
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": "Bmw",
+                "l": "Bmw"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "manufacturer",
+    "expression": "grel:'BMW'",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column manufacturer using expression grel:'LTI'",
+    "engineConfig": {
+      "facets": [
+        {
+          "invert": false,
+          "expression": "value",
+          "selectError": false,
+          "omitError": false,
+          "selectBlank": false,
+          "name": "manufacturer",
+          "omitBlank": false,
+          "columnName": "manufacturer",
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": "Lti",
+                "l": "Lti"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "manufacturer",
+    "expression": "grel:'LTI'",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column manufacturer using expression grel:'McLaren'",
+    "engineConfig": {
+      "facets": [
+        {
+          "invert": false,
+          "expression": "value",
+          "selectError": false,
+          "omitError": false,
+          "selectBlank": false,
+          "name": "manufacturer",
+          "omitBlank": false,
+          "columnName": "manufacturer",
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": "Mclaren",
+                "l": "Mclaren"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "manufacturer",
+    "expression": "grel:'McLaren'",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column manufacturer using expression grel:'Mercedes-Benz'",
+    "engineConfig": {
+      "facets": [
+        {
+          "invert": false,
+          "expression": "value",
+          "selectError": false,
+          "omitError": false,
+          "selectBlank": false,
+          "name": "manufacturer",
+          "omitBlank": false,
+          "columnName": "manufacturer",
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": "Mercedes-benz",
+                "l": "Mercedes-benz"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "manufacturer",
+    "expression": "grel:'Mercedes-Benz'",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column manufacturer using expression grel:'MG Motors UK'",
+    "engineConfig": {
+      "facets": [
+        {
+          "invert": false,
+          "expression": "value",
+          "selectError": false,
+          "omitError": false,
+          "selectBlank": false,
+          "name": "manufacturer",
+          "omitBlank": false,
+          "columnName": "manufacturer",
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": "Mg Motors Uk",
+                "l": "Mg Motors Uk"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "manufacturer",
+    "expression": "grel:'MG Motors UK'",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column manufacturer using expression grel:'Rolls-Royce'",
+    "engineConfig": {
+      "facets": [
+        {
+          "invert": false,
+          "expression": "value",
+          "selectError": false,
+          "omitError": false,
+          "selectBlank": false,
+          "name": "manufacturer",
+          "omitBlank": false,
+          "columnName": "manufacturer",
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": "Rolls-royce",
+                "l": "Rolls-royce"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "manufacturer",
+    "expression": "grel:'Rolls-Royce'",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column manufacturer",
+    "engineConfig": {
+      "facets": [
+        {
+          "invert": false,
+          "expression": "value",
+          "selectError": false,
+          "omitError": false,
+          "selectBlank": false,
+          "name": "manufacturer",
+          "omitBlank": false,
+          "columnName": "manufacturer",
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": "Ssangyong",
+                "l": "Ssangyong"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "manufacturer",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ssangyong"
+        ],
+        "to": "SsangYong"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column manufacturer",
+    "engineConfig": {
+      "facets": [
+        {
+          "invert": false,
+          "expression": "value",
+          "selectError": false,
+          "omitError": false,
+          "selectBlank": false,
+          "name": "manufacturer",
+          "omitBlank": false,
+          "columnName": "manufacturer",
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": "Volkswagen C.V.",
+                "l": "Volkswagen C.V."
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "manufacturer",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Volkswagen C.V."
+        ],
+        "to": "Volkswagen"
+      }
+    ]
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column year at index 1 based on column file using expression grel:2013",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "newColumnName": "year",
+    "columnInsertIndex": 1,
+    "baseColumnName": "file",
+    "expression": "grel:2013",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column manufacturer using expression value.trim()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "manufacturer",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Model using expression value.toString()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Model",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Model using expression value.trim()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Model",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Model using expression grel:replace(value, 'Coup�', 'Coupé')",
+    "engineConfig": {
+      "facets": [
+        {
+          "query": "�",
+          "name": "Model",
+          "caseSensitive": false,
+          "columnName": "Model",
+          "type": "text",
+          "mode": "text"
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Model",
+    "expression": "grel:replace(value, 'Coup�', 'Coupé')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Model using expression grel:replace(value, 'Sc�nic', 'Scénic')",
+    "engineConfig": {
+      "facets": [
+        {
+          "query": "�",
+          "name": "Model",
+          "caseSensitive": false,
+          "columnName": "Model",
+          "type": "text",
+          "mode": "text"
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Model",
+    "expression": "grel:replace(value, 'Sc�nic', 'Scénic')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Model using expression grel:replace(value, 'M�gane', 'Mégane')",
+    "engineConfig": {
+      "facets": [
+        {
+          "query": "�",
+          "name": "Model",
+          "caseSensitive": false,
+          "columnName": "Model",
+          "type": "text",
+          "mode": "text"
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Model",
+    "expression": "grel:replace(value, 'M�gane', 'Mégane')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Model using expression grel:replace(value, 'coup�', 'coupé')",
+    "engineConfig": {
+      "facets": [
+        {
+          "query": "�",
+          "name": "Model",
+          "caseSensitive": false,
+          "columnName": "Model",
+          "type": "text",
+          "mode": "text"
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Model",
+    "expression": "grel:replace(value, 'coup�', 'coupé')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Model using expression grel:replace(value, '�', '')",
+    "engineConfig": {
+      "facets": [
+        {
+          "query": "�",
+          "name": "Model",
+          "caseSensitive": false,
+          "columnName": "Model",
+          "type": "text",
+          "mode": "text"
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Model",
+    "expression": "grel:replace(value, '�', '')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Model using expression value.trim()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Model",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Model to model",
+    "oldColumnName": "Model",
+    "newColumnName": "model"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Description to description",
+    "oldColumnName": "Description",
+    "newColumnName": "description"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column description using expression grel:replace(value, 'Coup�', 'Coupé')",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "description",
+    "expression": "grel:replace(value, 'Coup�', 'Coupé')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column description using expression grel:replace(value, 'M�gane', 'Mégane')",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "description",
+    "expression": "grel:replace(value, 'M�gane', 'Mégane')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column description using expression grel:replace(value, 'Sc�nic', 'Scénic')",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "description",
+    "expression": "grel:replace(value, 'Sc�nic', 'Scénic')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column description using expression grel:replace(value, 'coup�', 'coupé')",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "description",
+    "expression": "grel:replace(value, 'coup�', 'coupé')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column description using expression grel:replace(value, '�', '')",
+    "engineConfig": {
+      "facets": [
+        {
+          "query": "�",
+          "name": "description",
+          "caseSensitive": false,
+          "columnName": "description",
+          "type": "text",
+          "mode": "text"
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "description",
+    "expression": "grel:replace(value, '�', '')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column description using expression value.trim()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "description",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column euro_standard at index 5 based on column description using expression null",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "newColumnName": "euro_standard",
+    "columnInsertIndex": 5,
+    "baseColumnName": "description",
+    "expression": "null",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column euro_standard using expression grel:5",
+    "engineConfig": {
+      "facets": [
+        {
+          "invert": false,
+          "expression": "value",
+          "selectError": false,
+          "omitError": false,
+          "selectBlank": false,
+          "name": "file",
+          "omitBlank": false,
+          "columnName": "file",
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": "download-data-for-Aug-2013-Euro-5.csv",
+                "l": "download-data-for-Aug-2013-Euro-5.csv"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "euro_standard",
+    "expression": "grel:5",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column euro_standard using expression grel:6",
+    "engineConfig": {
+      "facets": [
+        {
+          "invert": false,
+          "expression": "value",
+          "selectError": false,
+          "omitError": false,
+          "selectBlank": false,
+          "name": "file",
+          "omitBlank": false,
+          "columnName": "file",
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": "download-data-for-Aug-2013-Euro-6.csv",
+                "l": "download-data-for-Aug-2013-Euro-6.csv"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "euro_standard",
+    "expression": "grel:6",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column VED Band to tax_band",
+    "oldColumnName": "VED Band",
+    "newColumnName": "tax_band"
+  },
+  {
+    "op": "core/column-reorder",
+    "description": "Reorder columns",
+    "columnNames": [
+      "file",
+      "year",
+      "manufacturer",
+      "model",
+      "description",
+      "euro_standard",
+      "tax_band",
+      "Transmission",
+      "Transmission type",
+      "Engine Capacity",
+      "Fuel Type",
+      "Electric energy consumption Miles/kWh",
+      "wh/km",
+      "Electric range (Km)",
+      "Electric range (miles)",
+      "Metric Urban (Cold)",
+      "Metric Extra-Urban",
+      "Metric Combined",
+      "Imperial Urban (Cold)",
+      "Imperial Extra-Urban",
+      "Imperial Combined",
+      "CO2 g/km",
+      "Fuel Cost of driving 12000 Miles (�s)",
+      "Electricity cost of driving 12000 Miles (�s)",
+      "Total costs 12000 miles (�s)",
+      "Noise Level dB(A)",
+      "Emissions CO [mg/km]",
+      "THC Emissions [mg/km]",
+      "Emissions NOx [mg/km]",
+      "THC + NOx Emissions [mg/km]",
+      "Particulates [mg/km]",
+      "Euro Standard",
+      "Booklet",
+      "transmission",
+      "Electrical energy consumption miles/kWh",
+      "Fuel Cost of Driving 12000 Miles (�s)",
+      "Electricity cost of Driving 12000 Miles (�s)",
+      "Total cost of Driving 12000 miles (�s)",
+      "Particulates [No.] [mg/km]"
+    ]
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column tax_band using expression value.trim()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "tax_band",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/column-reorder",
+    "description": "Reorder columns",
+    "columnNames": [
+      "file",
+      "year",
+      "manufacturer",
+      "model",
+      "description",
+      "euro_standard",
+      "tax_band",
+      "Transmission type",
+      "Transmission",
+      "Engine Capacity",
+      "Fuel Type",
+      "Electric energy consumption Miles/kWh",
+      "wh/km",
+      "Electric range (Km)",
+      "Electric range (miles)",
+      "Metric Urban (Cold)",
+      "Metric Extra-Urban",
+      "Metric Combined",
+      "Imperial Urban (Cold)",
+      "Imperial Extra-Urban",
+      "Imperial Combined",
+      "CO2 g/km",
+      "Fuel Cost of driving 12000 Miles (�s)",
+      "Electricity cost of driving 12000 Miles (�s)",
+      "Total costs 12000 miles (�s)",
+      "Noise Level dB(A)",
+      "Emissions CO [mg/km]",
+      "THC Emissions [mg/km]",
+      "Emissions NOx [mg/km]",
+      "THC + NOx Emissions [mg/km]",
+      "Particulates [mg/km]",
+      "Euro Standard",
+      "Booklet",
+      "transmission",
+      "Electrical energy consumption miles/kWh",
+      "Fuel Cost of Driving 12000 Miles (�s)",
+      "Electricity cost of Driving 12000 Miles (�s)",
+      "Total cost of Driving 12000 miles (�s)",
+      "Particulates [No.] [mg/km]"
+    ]
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Transmission to transmission_type",
+    "oldColumnName": "Transmission",
+    "newColumnName": "transmission_type"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column transmission",
+    "columnName": "transmission"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Transmission type to transmission",
+    "oldColumnName": "Transmission type",
+    "newColumnName": "transmission"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Engine Capacity using expression null",
+    "engineConfig": {
+      "facets": [
+        {
+          "to": 7100,
+          "expression": "value",
+          "selectError": true,
+          "selectNumeric": false,
+          "selectBlank": true,
+          "name": "Engine Capacity",
+          "columnName": "Engine Capacity",
+          "selectNonNumeric": true,
+          "from": 200,
+          "type": "range"
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Engine Capacity",
+    "expression": "null",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Engine Capacity to engine_capacity",
+    "oldColumnName": "Engine Capacity",
+    "newColumnName": "engine_capacity"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Fuel Type using expression value.trim()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Fuel Type",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Fuel Type to fuel_type",
+    "oldColumnName": "Fuel Type",
+    "newColumnName": "fuel_type"
+  },
+  {
+    "op": "core/column-reorder",
+    "description": "Reorder columns",
+    "columnNames": [
+      "file",
+      "year",
+      "manufacturer",
+      "model",
+      "description",
+      "euro_standard",
+      "tax_band",
+      "transmission",
+      "transmission_type",
+      "engine_capacity",
+      "fuel_type",
+      "Metric Urban (Cold)",
+      "Metric Extra-Urban",
+      "Metric Combined",
+      "Imperial Urban (Cold)",
+      "Imperial Extra-Urban",
+      "Imperial Combined",
+      "CO2 g/km",
+      "Fuel Cost of driving 12000 Miles (�s)",
+      "Electricity cost of driving 12000 Miles (�s)",
+      "Total costs 12000 miles (�s)",
+      "Noise Level dB(A)",
+      "Emissions CO [mg/km]",
+      "THC Emissions [mg/km]",
+      "Emissions NOx [mg/km]",
+      "THC + NOx Emissions [mg/km]",
+      "Particulates [mg/km]",
+      "Euro Standard",
+      "Booklet",
+      "Electrical energy consumption miles/kWh",
+      "Fuel Cost of Driving 12000 Miles (�s)",
+      "Electricity cost of Driving 12000 Miles (�s)",
+      "Total cost of Driving 12000 miles (�s)",
+      "Particulates [No.] [mg/km]"
+    ]
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Metric Urban (Cold) to urban_metric",
+    "oldColumnName": "Metric Urban (Cold)",
+    "newColumnName": "urban_metric"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Metric Extra-Urban to extra_urban_metric",
+    "oldColumnName": "Metric Extra-Urban",
+    "newColumnName": "extra_urban_metric"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Metric Combined to combined_metric",
+    "oldColumnName": "Metric Combined",
+    "newColumnName": "combined_metric"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column urban_metric using expression null",
+    "engineConfig": {
+      "facets": [
+        {
+          "to": 27,
+          "expression": "value",
+          "selectError": true,
+          "selectNumeric": false,
+          "selectBlank": true,
+          "name": "urban_metric",
+          "columnName": "urban_metric",
+          "selectNonNumeric": true,
+          "from": 3,
+          "type": "range"
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "urban_metric",
+    "expression": "null",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column extra_urban_metric using expression null",
+    "engineConfig": {
+      "facets": [
+        {
+          "to": 12.52,
+          "expression": "value",
+          "selectError": true,
+          "selectNumeric": false,
+          "selectBlank": true,
+          "name": "extra_urban_metric",
+          "columnName": "extra_urban_metric",
+          "selectNonNumeric": true,
+          "from": 2.9,
+          "type": "range"
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "extra_urban_metric",
+    "expression": "null",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column combined_metric using expression null",
+    "engineConfig": {
+      "facets": [
+        {
+          "to": 45,
+          "expression": "value",
+          "selectError": true,
+          "selectNumeric": false,
+          "selectBlank": true,
+          "name": "combined_metric",
+          "columnName": "combined_metric",
+          "selectNonNumeric": true,
+          "from": 1,
+          "type": "range"
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "combined_metric",
+    "expression": "null",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Imperial Urban (Cold) to urban_imperial",
+    "oldColumnName": "Imperial Urban (Cold)",
+    "newColumnName": "urban_imperial"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Imperial Extra-Urban to extra_urban_imperial",
+    "oldColumnName": "Imperial Extra-Urban",
+    "newColumnName": "extra_urban_imperial"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Imperial Combined to combined_imperial",
+    "oldColumnName": "Imperial Combined",
+    "newColumnName": "combined_imperial"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column urban_imperial using expression null",
+    "engineConfig": {
+      "facets": [
+        {
+          "to": 92,
+          "expression": "value",
+          "selectError": true,
+          "selectNumeric": false,
+          "selectBlank": true,
+          "name": "urban_imperial",
+          "columnName": "urban_imperial",
+          "selectNonNumeric": true,
+          "from": 10,
+          "type": "range"
+        },
+        {
+          "to": 98,
+          "expression": "value",
+          "selectError": true,
+          "selectNumeric": false,
+          "selectBlank": true,
+          "name": "extra_urban_imperial",
+          "columnName": "extra_urban_imperial",
+          "selectNonNumeric": true,
+          "from": 22,
+          "type": "range"
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "urban_imperial",
+    "expression": "null",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column extra_urban_imperial using expression null",
+    "engineConfig": {
+      "facets": [
+        {
+          "to": 92,
+          "expression": "value",
+          "selectError": true,
+          "selectNumeric": false,
+          "selectBlank": true,
+          "name": "urban_imperial",
+          "columnName": "urban_imperial",
+          "selectNonNumeric": true,
+          "from": 10,
+          "type": "range"
+        },
+        {
+          "to": 98,
+          "expression": "value",
+          "selectError": true,
+          "selectNumeric": false,
+          "selectBlank": true,
+          "name": "extra_urban_imperial",
+          "columnName": "extra_urban_imperial",
+          "selectNonNumeric": true,
+          "from": 22,
+          "type": "range"
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "extra_urban_imperial",
+    "expression": "null",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column combined_imperial using expression null",
+    "engineConfig": {
+      "facets": [
+        {
+          "to": 240,
+          "expression": "value",
+          "selectError": true,
+          "selectNumeric": false,
+          "selectBlank": true,
+          "name": "combined_imperial",
+          "columnName": "combined_imperial",
+          "selectNonNumeric": true,
+          "from": 10,
+          "type": "range"
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "combined_imperial",
+    "expression": "null",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column CO2 g/km to co2",
+    "oldColumnName": "CO2 g/km",
+    "newColumnName": "co2"
+  },
+  {
+    "op": "core/column-reorder",
+    "description": "Reorder columns",
+    "columnNames": [
+      "file",
+      "year",
+      "manufacturer",
+      "model",
+      "description",
+      "euro_standard",
+      "tax_band",
+      "transmission",
+      "transmission_type",
+      "engine_capacity",
+      "fuel_type",
+      "urban_metric",
+      "extra_urban_metric",
+      "combined_metric",
+      "urban_imperial",
+      "extra_urban_imperial",
+      "combined_imperial",
+      "Noise Level dB(A)",
+      "co2",
+      "Fuel Cost of driving 12000 Miles (�s)",
+      "Electricity cost of driving 12000 Miles (�s)",
+      "Total costs 12000 miles (�s)",
+      "Emissions CO [mg/km]",
+      "THC Emissions [mg/km]",
+      "Emissions NOx [mg/km]",
+      "THC + NOx Emissions [mg/km]",
+      "Particulates [mg/km]",
+      "Euro Standard",
+      "Booklet",
+      "Electrical energy consumption miles/kWh",
+      "Fuel Cost of Driving 12000 Miles (�s)",
+      "Electricity cost of Driving 12000 Miles (�s)",
+      "Total cost of Driving 12000 miles (�s)",
+      "Particulates [No.] [mg/km]"
+    ]
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Noise Level dB(A) to noise_level",
+    "oldColumnName": "Noise Level dB(A)",
+    "newColumnName": "noise_level"
+  },
+  {
+    "op": "core/column-reorder",
+    "description": "Reorder columns",
+    "columnNames": [
+      "file",
+      "year",
+      "manufacturer",
+      "model",
+      "description",
+      "euro_standard",
+      "tax_band",
+      "transmission",
+      "transmission_type",
+      "engine_capacity",
+      "fuel_type",
+      "urban_metric",
+      "extra_urban_metric",
+      "combined_metric",
+      "urban_imperial",
+      "extra_urban_imperial",
+      "combined_imperial",
+      "noise_level",
+      "co2",
+      "THC Emissions [mg/km]",
+      "Emissions CO [mg/km]",
+      "Emissions NOx [mg/km]",
+      "THC + NOx Emissions [mg/km]",
+      "Particulates [mg/km]",
+      "Fuel Cost of driving 12000 Miles (�s)",
+      "Electricity cost of driving 12000 Miles (�s)",
+      "Total costs 12000 miles (�s)",
+      "Euro Standard",
+      "Booklet",
+      "Electrical energy consumption miles/kWh",
+      "Fuel Cost of Driving 12000 Miles (�s)",
+      "Electricity cost of Driving 12000 Miles (�s)",
+      "Total cost of Driving 12000 miles (�s)",
+      "Particulates [No.] [mg/km]"
+    ]
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column THC Emissions [mg/km] to thc_emissions",
+    "oldColumnName": "THC Emissions [mg/km]",
+    "newColumnName": "thc_emissions"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Emissions CO [mg/km] to co_emissions",
+    "oldColumnName": "Emissions CO [mg/km]",
+    "newColumnName": "co_emissions"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Emissions NOx [mg/km] to nox_emissions",
+    "oldColumnName": "Emissions NOx [mg/km]",
+    "newColumnName": "nox_emissions"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column THC + NOx Emissions [mg/km] to thc_nox_emissions",
+    "oldColumnName": "THC + NOx Emissions [mg/km]",
+    "newColumnName": "thc_nox_emissions"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Particulates [mg/km] to particulates_emissions",
+    "oldColumnName": "Particulates [mg/km]",
+    "newColumnName": "particulates_emissions"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column particulates_emissions using expression null",
+    "engineConfig": {
+      "facets": [
+        {
+          "to": 101,
+          "expression": "value",
+          "selectError": true,
+          "selectNumeric": false,
+          "selectBlank": false,
+          "name": "thc_emissions",
+          "columnName": "thc_emissions",
+          "selectNonNumeric": true,
+          "from": 9,
+          "type": "range"
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "particulates_emissions",
+    "expression": "null",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column thc_nox_emissions using expression null",
+    "engineConfig": {
+      "facets": [
+        {
+          "to": 101,
+          "expression": "value",
+          "selectError": true,
+          "selectNumeric": false,
+          "selectBlank": false,
+          "name": "thc_emissions",
+          "columnName": "thc_emissions",
+          "selectNonNumeric": true,
+          "from": 9,
+          "type": "range"
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "thc_nox_emissions",
+    "expression": "null",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column nox_emissions using expression null",
+    "engineConfig": {
+      "facets": [
+        {
+          "to": 101,
+          "expression": "value",
+          "selectError": true,
+          "selectNumeric": false,
+          "selectBlank": false,
+          "name": "thc_emissions",
+          "columnName": "thc_emissions",
+          "selectNonNumeric": true,
+          "from": 9,
+          "type": "range"
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "nox_emissions",
+    "expression": "null",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column co_emissions using expression null",
+    "engineConfig": {
+      "facets": [
+        {
+          "to": 101,
+          "expression": "value",
+          "selectError": true,
+          "selectNumeric": false,
+          "selectBlank": false,
+          "name": "thc_emissions",
+          "columnName": "thc_emissions",
+          "selectNonNumeric": true,
+          "from": 9,
+          "type": "range"
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "co_emissions",
+    "expression": "null",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column thc_emissions using expression null",
+    "engineConfig": {
+      "facets": [
+        {
+          "to": 101,
+          "expression": "value",
+          "selectError": true,
+          "selectNumeric": false,
+          "selectBlank": false,
+          "name": "thc_emissions",
+          "columnName": "thc_emissions",
+          "selectNonNumeric": true,
+          "from": 9,
+          "type": "range"
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "thc_emissions",
+    "expression": "null",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Fuel Cost of driving 12000 Miles (�s)",
+    "columnName": "Fuel Cost of driving 12000 Miles (�s)"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Electricity cost of driving 12000 Miles (�s)",
+    "columnName": "Electricity cost of driving 12000 Miles (�s)"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Total costs 12000 miles (�s) to fuel_cost_12000_ miles",
+    "oldColumnName": "Total costs 12000 miles (�s)",
+    "newColumnName": "fuel_cost_12000_ miles"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column fuel_cost_12000_ miles using expression grel:replace(value, '�', '')",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "fuel_cost_12000_ miles",
+    "expression": "grel:replace(value, '�', '')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column fuel_cost_12000_ miles using expression value.toNumber()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "fuel_cost_12000_ miles",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column fuel_cost_12000_ miles using expression grel:replace(value, ',', '')",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "fuel_cost_12000_ miles",
+    "expression": "grel:replace(value, ',', '')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column fuel_cost_12000_ miles using expression value.toNumber()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "fuel_cost_12000_ miles",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column fuel_cost_12000_ miles using expression null",
+    "engineConfig": {
+      "facets": [
+        {
+          "to": 4800,
+          "expression": "value",
+          "selectError": true,
+          "selectNumeric": false,
+          "selectBlank": false,
+          "name": "fuel_cost_12000_ miles",
+          "columnName": "fuel_cost_12000_ miles",
+          "selectNonNumeric": true,
+          "from": 300,
+          "type": "range"
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "fuel_cost_12000_ miles",
+    "expression": "null",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column fuel_cost_6000_miles at index 25 based on column fuel_cost_12000_ miles using expression null",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "newColumnName": "fuel_cost_6000_miles",
+    "columnInsertIndex": 25,
+    "baseColumnName": "fuel_cost_12000_ miles",
+    "expression": "null",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Euro Standard",
+    "columnName": "Euro Standard"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Booklet",
+    "columnName": "Booklet"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Electrical energy consumption miles/kWh",
+    "columnName": "Electrical energy consumption miles/kWh"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column fuel_cost_12000_ miles using expression grel:cells['Total cost of Driving 12000 miles (�s)'].value",
+    "engineConfig": {
+      "facets": [
+        {
+          "invert": false,
+          "expression": "isBlank(value)",
+          "selectError": false,
+          "omitError": false,
+          "selectBlank": false,
+          "name": "Total cost of Driving 12000 miles (�s)",
+          "omitBlank": false,
+          "columnName": "Total cost of Driving 12000 miles (�s)",
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "fuel_cost_12000_ miles",
+    "expression": "grel:cells['Total cost of Driving 12000 miles (�s)'].value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/column-reorder",
+    "description": "Reorder columns",
+    "columnNames": [
+      "file",
+      "year",
+      "manufacturer",
+      "model",
+      "description",
+      "euro_standard",
+      "tax_band",
+      "transmission",
+      "transmission_type",
+      "engine_capacity",
+      "fuel_type",
+      "urban_metric",
+      "extra_urban_metric",
+      "combined_metric",
+      "urban_imperial",
+      "extra_urban_imperial",
+      "combined_imperial",
+      "noise_level",
+      "co2",
+      "thc_emissions",
+      "co_emissions",
+      "nox_emissions",
+      "thc_nox_emissions",
+      "particulates_emissions",
+      "fuel_cost_12000_ miles",
+      "fuel_cost_6000_miles",
+      "Particulates [No.] [mg/km]"
+    ]
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column particulates_emissions using expression grel:cells['Particulates [No.] [mg/km]'].value",
+    "engineConfig": {
+      "facets": [
+        {
+          "invert": false,
+          "expression": "isBlank(value)",
+          "selectError": false,
+          "omitError": false,
+          "selectBlank": false,
+          "name": "Particulates [No.] [mg/km]",
+          "omitBlank": false,
+          "columnName": "Particulates [No.] [mg/km]",
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "particulates_emissions",
+    "expression": "grel:cells['Particulates [No.] [mg/km]'].value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Particulates [No.] [mg/km]",
+    "columnName": "Particulates [No.] [mg/km]"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column date_of_change at index 30 based on column fuel_cost_6000_miles using expression null",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "newColumnName": "date_of_change",
+    "columnInsertIndex": 30,
+    "baseColumnName": "fuel_cost_6000_miles",
+    "expression": "null",
+    "onError": "set-to-blank"
+  }
+]
