@@ -1,0 +1,169 @@
+{
+        "fields": [
+          {
+            "id": "file",
+            "label": "File",
+            "type": "string",
+            "description": "Original CSV file from where this record was extracted."
+          },
+          {
+            "id": "year",
+            "label": "Year",
+            "type": "date",
+            "format": "YYYY",
+            "description": "Year for the original record."
+          },
+          {
+            "id": "manufacturer",
+            "label": "Manufacturer",
+            "type": "string",
+            "description": "Car manufacturer or importer."
+          },
+          {
+            "id": "model",
+            "label": "Model",
+            "type": "string",
+            "description": "Car model."
+          },
+          {
+            "id": "description",
+            "label": "Description",
+            "type": "string",
+            "description": "Further details on the car model."
+          },
+          {
+            "id": "euro_standard",
+            "label": "Euro Standard",
+            "type": "string",
+            "description": "Euro Standard to which the record applies. Note that old standards where previously numbered in roman numerals (eg II, IV, etc). See http://en.wikipedia.org/wiki/European_emission_standards for more details."
+          },
+
+          {
+            "id": "tax_band",
+            "label": "Tax band",
+            "type": "string",
+            "description": "Tax band for this car model in the UK. See https://www.gov.uk/vehicle-tax-rate-tables."
+          },
+          {
+            "id": "transmission",
+            "label": "Transmission",
+            "type": "string",
+            "description": "Transmission details. Note that this field has not been normalized, eg both '5AT' and 'A5' may indicate an Automatic 5 speed car."
+          },
+          {
+            "id": "transmission_type",
+            "label": "Transmission type",
+            "type": "string",
+            "description": "Transmission type. Either Automatic or Manual."
+          },
+          {
+            "id": "engine_capacity",
+            "label": "Engine capacity",
+            "type": "integer",
+            "description": "Engine capacity in cubic centimetres (cc). To obtain the more common figure in liters, divide by 100 and round to one decimal, eg 1368 cc -> 1.4 L"
+          },
+          {
+            "id": "fuel_type",
+            "label": "Fuel type",
+            "type": "string",
+            "description": "Fuel type this car uses, eg Diesel, Petrol, Electric, Hybrid, etc."
+          },
+          {
+            "id": "urban_metric",
+            "label": "Urban (metric)",
+            "type": "number",
+            "description": "Fuel comsumption in urban conditions in liters per 100 Kilometers (l/100 Km)."
+          },
+          {
+            "id": "extra_urban_metric",
+            "label": "Extra-urban (metric)",
+            "type": "number",
+            "description": "Fuel comsumption in extra-urban conditions in liters per 100 Kilometers (l/100 Km)."
+          },
+          {
+            "id": "combined_metric",
+            "label": "Combined (metric)",
+            "type": "number",
+            "description": "Combined fuel comsumption: average of the urban and extra-urban tests, weighted by the distances covered in each part, in liters per 100 Kilometers (l/100 Km)."
+          },
+          {
+            "id": "urban_imperial",
+            "label": "Urban (imperial)",
+            "type": "number",
+            "description": "Fuel comsumption in urban conditions in miles per gallon (mpg)."
+          },
+          {
+            "id": "extra_urban_imperial",
+            "label": "Extra-urban (imperial)",
+            "type": "number",
+            "description": "Fuel comsumption in extra-urban conditions in miles per gallon (mpg)."
+          },
+          {
+            "id": "combined_imperial",
+            "label": "Combined (imperial)",
+            "type": "number",
+            "description": "Combined fuel comsumption: average of the urban and extra-urban tests, weighted by the distances covered in each part, in miles per gallon (mpg)."
+          },
+          {
+            "id": "noise_level",
+            "label": "noise_level",
+            "type": "number",
+            "description": "External noise emitted by a car shown in decibels as measured on the A scale of a noise meter (dB (A)). See the guide referred in the dataset description for more details."
+          },
+          {
+            "id": "co2",
+            "label": "CO2 emissions",
+            "type": "number",
+            "description": "CO2 emissions in grammes per kilometre (g/km)."
+          },
+          {
+            "id": "thc_emissions",
+            "label": "thc_emissions",
+            "type": "number",
+            "description": "Hydrocarbon emissions in milligrammes per kilometre (mg/km)."
+          },
+          {
+            "id": "co_emissions",
+            "label": "co_emissions",
+            "type": "number",
+            "description": "Carbon monoxide emissions in milligrammes per kilometre (mg/km)."
+          },
+          {
+            "id": "nox_emissions",
+            "label": "nox_emissions",
+            "type": "number",
+            "description": "Nitrogen oxides emissions in milligrammes per kilometre (mg/km)."
+          },
+          {
+            "id": "thc_nox_emissions",
+            "label": "thc_nox_emissions",
+            "type": "number",
+            "description": "Hydrocarbon and Nitrogen oxides emissions in milligrammes per kilometre (mg/km)."
+          },
+          {
+            "id": "particulates",
+            "label": "particulates",
+            "type": "number",
+            "description": "Particulates emissions in milligrammes per kilometre (mg/km)."
+          },
+          {
+            "id": "fuel_cost_6000_miles",
+            "label": "fuel_cost_6000_miles",
+            "type": "number",
+            "description": "Fuel cost to run 6000 miles in pounds sterling (see booklet for details)"
+          },
+          {
+            "id": "fuel_cost_12000_miles",
+            "label": "fuel_cost_12000_miles",
+            "type": "number",
+            "description": "Fuel cost to run 12000 miles in pounds sterling (see booklet for details)"
+          },
+          {
+            "id": "date_of_change",
+            "label": "date_of_change",
+            "type": "string",
+            "description": "Date of change"
+          }
+        ]
+      }
+    
