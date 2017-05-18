@@ -18,9 +18,7 @@
     ],
     "resources": [
         {
-            "data": [
-                "data.csv"
-            ],
+            "path": "data.csv",
             "format": "csv",
             "mediatype": "text/csv",
             "schema": {
