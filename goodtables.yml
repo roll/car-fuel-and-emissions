@@ -1,4 +1,4 @@
-files:
-  -
-    source: 'data.csv'
-    schema: 'schema.json'
+files: data.csv
+checks: 
+- custom-constraint: 
+    constraint: noise_level*10 + co_emissions < 2000
