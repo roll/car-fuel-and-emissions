@@ -1,3 +1,3 @@
 files: data.csv
 checks: 
-- custom-constraint: {constraint: noise_level*10 + co_emissions < 1900}
+- custom-constraint: {constraint: noise_level*10 + co_emissions < 1800}
