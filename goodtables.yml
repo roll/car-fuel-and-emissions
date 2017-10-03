@@ -2,3 +2,4 @@ files:
   - source: data.csv
     checks:
       - custom-constraint: {constraint: noise_level*10 + co_emissions < 2500}
+      - blacklisted-value: {column: engine_capacity, blacklist: [3199]}
